@@ -4,6 +4,7 @@ interface TodoListProps {
 }
 
 const TodoList:React.FC<TodoListProps>=(props)=>{
+  
   //const todos = [{id:'t1',text:'walk 10km'}]
   return <ul>
     {props.items.map(todo=>(<li key={todo.id}>{todo.text}</li>))}
