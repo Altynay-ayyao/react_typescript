@@ -1,5 +1,6 @@
 
-
+import React from "react";
+import TodoList from "./components/TodoList";
 
 /* function App() {
   return (
@@ -9,7 +10,10 @@
   );
 } */
 const App:React.FC=()=>{
-  return (<div>React with TS</div>)
+  const todos = [{id:'t1', text:'walk 10km'}]
+  return (<div>{/*A component that adds todos */}
+  <TodoList items={todos}/>
+  </div>)
 
 }
 
